@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: whitesmoke;
+  background-color: rgb(86, 121, 126);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+/*
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  background: rgb(113, 133, 153);
+  z-index: 10;
+}
+
+.nav-list{
+    display: flex;
+    margin-right: 5vw;
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-list a:hover {
+    background: rgb(86, 121, 126)
+}
+
+
+#welcome-section  {
+  background-color: rgb(222, 238, 255);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40vh;
+  color: #333
+}
+
+img {
+  display: block;
+  max-width: auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    object-fit: cover;
+    width: 30vw;
+    height: 100%;
+}
+
+*/
+.brick-container-container {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.brick-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.brick {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+    margin: 0 5px 5px 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+img:hover {
+  filter: brightness(100%);
+}
