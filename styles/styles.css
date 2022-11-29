@@ -12,103 +12,94 @@
 html {
   font-size: 10px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  color: whitesmoke;
-  background-color: rgb(86, 121, 126);
+  /* color: whitesmoke; */
+  color: black;
+  /* background-color: rgb(86, 121, 126); */
+  background-color: whitesmoke;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
 }
-/*
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  position:fixed;
-  top: 0px;
-  left: 0px;
-  background: rgb(113, 133, 153);
-  z-index: 10;
-}
 
-.nav-list{
-    display: flex;
-    margin-right: 5vw;
-    list-style: none;
-}
-
-.nav-list a {
-    display: block;
-    font-size: 1.5rem;
-    padding: 2rem;
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.nav-list a:hover {
-    background: rgb(86, 121, 126)
-}
-
-
-#welcome-section  {
-  background-color: rgb(222, 238, 255);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40vh;
-  color: #333
-}
-
-img {
-  display: block;
-  max-width: auto;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-}
-
-.project-image {
-    object-fit: cover;
-    width: 30vw;
-    height: 100%;
-}
-
-*/
 .brick-container-container {
   max-width: 1000px;
   margin: 10px auto;
 }
 
 .brick-container {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 .brick {
-    flex: auto;
-    height: 250px;
-    min-width: 150px;
-    margin: 0 5px 5px 0;
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  margin: 0 5px 5px 0;
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-    object-fit: cover;
-    filter: brightness(90%);
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  filter: brightness(90%);
 }
 
 img:hover {
   filter: brightness(100%);
+}
+
+nav ul .pulldown {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+
+nav ul li:hover .pulldown {
+  display: block;
+}
+
+nav ul .pulldown li {
+  display: block;
+}
+
+nav [aria-current=page] {
+  background-color: #bbb;
+  color: #000;
+  border-bottom: .25em solid #444;
+}
+
+.topnav li:hover {
+  text-decoration: underline;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: .25em solid #444;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.topnav li {
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  margin: 5px;
+  user-select: none;
+}
+
+.topnav ul {
+  list-style: none;
+}
+
+main {
+  margin-top: 50px;
 }
