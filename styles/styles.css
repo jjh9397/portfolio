@@ -28,6 +28,9 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  padding-bottom: 15px;
+}
 .brick-container-container {
   max-width: 1000px;
   margin: 10px auto;
@@ -92,6 +95,7 @@ nav [aria-current=page] {
   width: 100%;
   background-color: white;
   z-index: 1;
+  text-align: right;
 }
 
 .topnav li {
@@ -103,6 +107,7 @@ nav [aria-current=page] {
 
 .topnav ul {
   list-style: none;
+  padding-right: 15px;
 }
 
 main {
