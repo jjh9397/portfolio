@@ -11,21 +11,22 @@
 <body>
   <nav class="topnav" role="navigation">
     <ul>
-      <li nav aria-current=page tabindex="1"><a href="index.html">Home</a></li>
-      <li tabindex="2"><a href="resume.html">Resume</a></li>
-      <li tabindex="3"><a>Biography</a></li>
-      <li tabindex="4"><a aria-haspopup="true" aria-expanded="false">Contact</a>
+      <li nav aria-current=page><a href="index.html" tabindex="0">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a aria-haspopup="true" aria-expanded="false" href="">Contact</a>
         <ul class="pulldown">
-          <li>Email</li>
-          <li>Phone</li>
+          <li>jasonhuang2023[at]u[dot]northwestern[dot]edu</li>
+          <li><a href="https://github.com/jjh9397/">Github</a></li>
         </ul>
       </li>
     </ul>
   </nav>
-  <main>
-    <div class="brick-container-container">
+  <main role="main">
+    <article class="brick-container-container" aria-labelledby="gallery" role="article">
       <h1 id="gallery">Gallery</h1>
-      <div class="brick-container" aria-labelledby="gallery">
+      <a href="gallery.html">About this project</a>
+      <div class="brick-container">
         <figure class="brick"><img src="images/(3).png" alt="back anatomy sketches"></figure>
         <figure class="brick"><img src="images/(5).png" alt="skeleton sketches, front and side view"></figure>
         <figure class="brick"><img src="images/back.jpg" alt="back skeleton and muscle sketch"></figure>
@@ -39,7 +40,13 @@
         <figure class="brick"><img src="images/8-23-21-2.png" alt="sketch of three figures conversing"></figure>
         <figure class="brick"><img src="images/torsos.png" alt="sketches of a torso rotated and drawn from various angles"></figure>
       </div>
-    </div>
+      <br>
+      <h1 id="palette">Palette Generator</h1>
+      <a href="https://pyro-a7.glitch.me/">About this project</a>
+      <div class="palette-wrapper">
+        <img src="images/palette-generator.png">
+      </div>
+    </article>
   </main>
   <script src="scripts/main.js"></script>
 </body>

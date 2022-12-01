@@ -25,12 +25,18 @@ body {
 
 a {
   color: black;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  background-color: lightgrey;
   text-decoration: none;
 }
 
 h1 {
   padding-bottom: 15px;
 }
+
 .brick-container-container {
   max-width: 1000px;
   margin: 10px auto;
@@ -40,6 +46,7 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  margin: 20px auto;
 }
 
 .brick {
@@ -70,10 +77,17 @@ nav ul .pulldown {
 
 nav ul li:hover .pulldown {
   display: block;
+  border: .1em solid #444;
 }
 
 nav ul .pulldown li {
   display: block;
+}
+
+nav ul.pulldown {
+  right: 20px;
+  text-align: right;
+  padding: 0;
 }
 
 nav [aria-current=page] {
@@ -83,7 +97,7 @@ nav [aria-current=page] {
 }
 
 .topnav li:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .topnav {
@@ -108,6 +122,11 @@ nav [aria-current=page] {
 .topnav ul {
   list-style: none;
   padding-right: 15px;
+}
+
+.palette-wrapper {
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
 main {
