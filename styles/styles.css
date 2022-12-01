@@ -75,7 +75,7 @@ nav ul .pulldown {
   background-color: white;
 }
 
-nav ul li:hover .pulldown {
+nav ul li:hover .pulldown, nav ul li:focus-within .pulldown {
   display: block;
   border: .1em solid #444;
 }
@@ -86,6 +86,27 @@ nav ul .pulldown li {
 
 nav ul.pulldown {
   right: 20px;
+  text-align: right;
+  padding: 0;
+}
+
+nav ul .project-pulldown {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+
+nav ul li:hover .project-pulldown, nav ul li:focus-within .project-pulldown {
+  display: block;
+  border: .1em solid #444;
+}
+
+nav ul .project-pulldown li {
+  display: block;
+}
+
+nav ul.project-pulldown {
+  right: 250px;
   text-align: right;
   padding: 0;
 }

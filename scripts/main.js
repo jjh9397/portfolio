@@ -1,17 +1,36 @@
+let home = document.getElementById("home");
+let contact = document.getElementById("contact");
 
-/*
-let myImage = document.querySelector('img');
+home.addEventListener("focus", focusHome);
+home.addEventListener("mouseover", focusHome);
+home.addEventListener("focusout", defocusHome);
+home.addEventListener("mouseout", defocusHome);
 
-myImage.onclick = function() {
-    let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/image-1.png') {
-      myImage.setAttribute ('src','images/image-2.png');
-      let myHeading = document.querySelector('h1');
-        myHeading.textContent = 'pink';
-    } else {
-      myImage.setAttribute ('src','images/image-1.png');
-      let myHeading = document.querySelector('h1');
-      myHeading.textContent = 'blue';
-    }
+contact.addEventListener("focus", focusContact);
+contact.addEventListener("mouseover", focusContact);
+contact.addEventListener("focusout", defocusContact);
+contact.addEventListener("mouseout", defocusContact);
+
+function focusHome(event)
+{
+  home.setAttribute("aria-expanded", "true");
+  home.innerHTML = "Home△";
 }
-*/
+
+function defocusHome(event)
+{
+  home.setAttribute("aria-expanded", "false");
+  home.innerHTML = "Home▽";
+}
+
+function focusContact(event)
+{
+  contact.setAttribute("aria-expanded", "true");
+  contact.innerHTML = "Contact△";
+}
+
+function defocusContact(event)
+{
+  contact.setAttribute("aria-expanded", "false");
+  contact.innerHTML = "Contact▽";
+}
