@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="topnav" role="navigation">
+    <ul>
+      <li nav aria-current=page>
+        <a id="home" aria-haspopup="true" aria-expanded="false" href="index.html" tabindex="0">Home▽</a>
+        <ul id="home-pulldown" class="project-pulldown">
+          <li><a href="gallery.html">Project 1</a></li>
+          <li><a href="project2.html">Project 2</a></li>
+          <li nav aria-current=page><a href="datavisualization.html">Data Visualization</a></li>
+        </ul>
+      </li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a id="contact" aria-haspopup="true" aria-expanded="false" tabindex="0">Contact▽</a>
+        <ul id="contact-pulldown" class="pulldown">
+          <li>jasonhuang2023[at]u[dot]northwestern[dot]edu</li>
+          <li><a href="https://github.com/jjh9397/">Github</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main role="main">
+    <article class="brick-container-container" aria-labelledby="gallery" role="article">
+      <h1 id="palette">Data Visualization: Palette Generator</h1>
+      <p>
+        This visualizes the most used colors in artworks from the Art Institute of Chicago search API. Each row represents an image, and each column represents
+        a frequently used color. The relationship shown by the visualization is the colors used by different artists in their artworks.
+      </p>
+      <a href="https://pyro-a7.glitch.me/">Generate palettes from other artists and read more project information</a>
+      <figure class="palette-wrapper" aria-labelledby="palette">
+        <img src="images/palette-generator.png" alt="color palette generated from artworks of Yoshida Hiroshi">
+        <figcaption>Palette generated from artworks of Yoshida Hiroshi</figcaption>
+      </figure>
+    </article>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="topnav" role="navigation">
+    <ul>
+      <li nav aria-current=page>
+        <a id="home" aria-haspopup="true" aria-expanded="false" href="index.html" tabindex="0">Home▽</a>
+        <ul id="home-pulldown" class="project-pulldown">
+          <li><a href="gallery.html">Project 1</a></li>
+          <li nav aria-current=page><a href="project2.html">Project 2</a></li>
+          <li><a href="datavisualization.html">Data Visualization</a></li>
+        </ul>
+      </li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a id="contact" aria-haspopup="true" aria-expanded="false" tabindex="0">Contact▽</a>
+        <ul id="contact-pulldown" class="pulldown">
+          <li>jasonhuang2023[at]u[dot]northwestern[dot]edu</li>
+          <li><a href="https://github.com/jjh9397/">Github</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main role="main">
+    <article class="brick-container-container" aria-labelledby="gallery" role="article">
+      <h1 id="palette">Project 2: Javascript Ray Tracing</h1>
+      <p>This project uses WebGL to create a 3D scene preview that can be navigated through using the WASD and arrow keys. The user can then press "t" to generate a ray traced image of the scene.</p>
+      <a href="https://jjh9397.github.io/web-gl-raytracing/">Use the interactive ray tracer</a>
+      <figure class="palette-wrapper" aria-labelledby="palette">
+        <img src="images/web_gl_raytracing_3.png" alt="ray traced image of many 3D spheres and boxes made of reflective materials">
+        <figcaption>Generated from scene 3</figcaption>
+      </figure>
+    </article>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
