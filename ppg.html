@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>PPG Processing</title>
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="topnav" role="navigation">
+    <ul>
+      <li nav aria-current=page>
+        <a id="home" aria-haspopup="true" aria-expanded="false" href="index.html" tabindex="0">Home▽</a>
+        <ul id="home-pulldown" class="project-pulldown">
+          <li><a href="gallery.html">Art Gallery</a></li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3494991">FaceBit Paper</a></li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3560905.3568561">Protean Paper</a></li>
+          <li nav aria-current="page"><a href="ppg.html">PPG Processing</a></li>
+          <li><a href="project2.html">JS Ray Tracer</a></li>
+          <li><a href="datavisualization.html">Data Visualization</a></li>
+        </ul>
+      </li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a id="contact" aria-haspopup="true" aria-expanded="false" tabindex="0">Contact▽</a>
+        <ul id="contact-pulldown" class="pulldown">
+          <li>jasonhuang2023[at]u[dot]northwestern[dot]edu</li>
+          <li><a href="https://github.com/jjh9397/">Github</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main role="main">
+    <article class="brick-container-container" aria-labelledby="ray-tracer" role="article">
+      <h1 id="ray-tracer">Pulse Plethysmography Processing</h1>
+      <p>In this ongoing research project, I used Python in order to process PPG signals into vital information such as heart rate, respiration rate, oxygen saturation,
+        and blood pressure as part of a signal processing pipeline for an embedded device. In the below figures, I recreate an IMS peak picking algorithm with modifications
+        to account for our noisier signal from a novel sensor placement. From the line segments generate, I seperate out different components of the signal (Amplitude Modulation, Baseline Wander, and Frequency Modulation)
+        to extract a respiratory signal.
+      </p>
+      <figure class="palette-wrapper">
+        <img src="images/ims_peaks.png">
+        <img src="images/ppg_output.png">
+        <img src="images/respiration_signal.png">
+        <figcaption>Using tweaked IMS algorithm to extract respiratory signal from PPG</figcaption>
+      </figure>
+    </article>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

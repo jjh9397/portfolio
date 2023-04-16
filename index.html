@@ -14,8 +14,11 @@
       <li nav aria-current=page>
         <a id="home" aria-haspopup="true" aria-expanded="false" href="index.html" tabindex="0">Home▽</a>
         <ul id="home-pulldown" class="project-pulldown">
-          <li><a href="gallery.html">Project 1</a></li>
-          <li><a href="project2.html">Project 2</a></li>
+          <li><a href="gallery.html">Art Gallery</a></li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3494991">FaceBit Paper</a></li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3560905.3568561">Protean Paper</a></li>
+          <li><a href="ppg.html">PPG Processing</a></li>
+          <li><a href="project2.html">JS Ray Tracer</a></li>
           <li><a href="datavisualization.html">Data Visualization</a></li>
         </ul>
       </li>
@@ -31,7 +34,7 @@
   </nav>
   <main role="main">
     <article class="brick-container-container" aria-labelledby="gallery" role="article">
-      <h1 id="gallery">Project 1: Gallery</h1>
+      <h1 id="gallery">Art Gallery</h1>
       <a href="gallery.html">Full gallery and project information</a>
       <div class="brick-container">
         <figure class="brick"><img src="images/5-8-2021.jpg" alt="painting of old man"></figure>
@@ -40,14 +43,46 @@
         <figure class="brick"><img src="images/9-9-2021.jpg" alt="painting of a woman holding a fan in a red chinese dress"></figure>
         <figure class="brick"><img src="images/9-6-2021-2.jpg" alt="sketch of a figure playing a red guitar"></figure>
       </div>
+
       <br>
-      <h1 id="palette">Project 2: Javascript Ray Tracing</h1>
+
+      <h1 id="facebit">FaceBit: Smart Face Mask</h1>
+      <a href="https://dl.acm.org/doi/10.1145/3494991">Paper published in the Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, Dec 2021 </a>
+      <figure class="palette-wrapper">
+        <img src="images/facebit_air_quality.jpg">
+        <figcaption>Development board setup for air quality sensor testing</figcaption>
+      </figure>
+
+      <br>
+
+      <h1 id="protein">Protean: Energy Harvesting Sensor Platform</h1>
+      <a href="https://dl.acm.org/doi/10.1145/3560905.3568561">Paper published in the Proceedings of the 20th ACM Conference on Embedded Networked Sensor Systems</a>
+      <figure class="palette-wrapper">
+        <img src="images/protean.jpg" alt="">
+        <figcaption>Breadboard setup to debug FRAM drivers for device</figcaption>
+      </figure>
+      <br>
+
+      <h1 id="ppg">Pulse Plethysmography Processing</h1>
+      <a href="ppg.html">Signal processing details and project information</a>
+      <figure class="palette-wrapper">
+        <img src="images/ims_peaks.png">
+        <img src="images/ppg_output.png">
+        <img src="images/respiration_signal.png">
+        <figcaption>Using tweaked IMS algorithm to extract respiratory signal from PPG</figcaption>
+      </figure>
+
+      <br>
+
+      <h1 id="palette">Javascript Ray Tracing</h1>
       <a href="project2.html">Ray tracer project information and interactive ray tracer</a>
       <figure class="palette-wrapper" aria-labelledby="palette">
         <img src="images/web_gl_raytracing_3_cropped.png" alt="ray traced image of many 3D spheres and boxes made of reflective materials">
-        <figcaption>Generated from scene 3</figcaption>
+        <figcaption>Ray traced image generated from scene 3</figcaption>
       </figure>
+
       <br>
+
       <h1 id="palette">Data Visualization: Palette Generator</h1>
       <a href="datavisualization.html">Data visualization project information and interactive palette generator</a>
       <figure class="palette-wrapper" aria-labelledby="palette">
